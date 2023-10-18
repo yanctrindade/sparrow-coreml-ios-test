@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		433786782ABDD05B002C84A6 /* VideoFrameReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433786772ABDD05B002C84A6 /* VideoFrameReader.swift */; };
+		4337867A2ABDD227002C84A6 /* CoreMLProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433786792ABDD227002C84A6 /* CoreMLProcessor.swift */; };
+		4337867D2ABDD2DF002C84A6 /* CMSampleBuffer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337867C2ABDD2DF002C84A6 /* CMSampleBuffer+Extensions.swift */; };
+		4337867F2ABDD34E002C84A6 /* CVPixelBuffer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337867E2ABDD34E002C84A6 /* CVPixelBuffer+Extensions.swift */; };
+		433786812ABDD391002C84A6 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433786802ABDD391002C84A6 /* Int+Extensions.swift */; };
+		5908C1F72ABCDB6900A05070 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5908C1F62ABCDB6900A05070 /* VideoPicker.swift */; };
+		595C4A9A2ABCB50400E6012E /* sparrow_challengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C4A992ABCB50400E6012E /* sparrow_challengeApp.swift */; };
+		595C4A9C2ABCB50400E6012E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C4A9B2ABCB50400E6012E /* ContentView.swift */; };
+		595C4A9E2ABCB50600E6012E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 595C4A9D2ABCB50600E6012E /* Assets.xcassets */; };
+		595C4AA22ABCB50600E6012E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 595C4AA12ABCB50600E6012E /* Preview Assets.xcassets */; };
+		595C4AAC2ABCB50600E6012E /* sparrow_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C4AAB2ABCB50600E6012E /* sparrow_challengeTests.swift */; };
+		595C4AB62ABCB50600E6012E /* sparrow_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C4AB52ABCB50600E6012E /* sparrow_challengeUITests.swift */; };
+		595C4AB82ABCB50600E6012E /* sparrow_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C4AB72ABCB50600E6012E /* sparrow_challengeUITestsLaunchTests.swift */; };
+		59E9250E2ABCDE5B00E32821 /* YOLOv3FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 59E9250C2ABCDE5B00E32821 /* YOLOv3FP16.mlmodel */; };
+		59E9250F2ABCDE5B00E32821 /* YOLOv3TinyFP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 59E9250D2ABCDE5B00E32821 /* YOLOv3TinyFP16.mlmodel */; };
+		59E925152ABCE92500E32821 /* VideoViewPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E925142ABCE92500E32821 /* VideoViewPlayer.swift */; };
+		59E925172ABCF2D700E32821 /* VideoViewPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E925162ABCF2D700E32821 /* VideoViewPlayerViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		595C4AA82ABCB50600E6012E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 595C4A8E2ABCB50400E6012E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 595C4A952ABCB50400E6012E;
+			remoteInfo = "sparrow-challenge";
+		};
+		595C4AB22ABCB50600E6012E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 595C4A8E2ABCB50400E6012E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 595C4A952ABCB50400E6012E;
+			remoteInfo = "sparrow-challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		433786772ABDD05B002C84A6 /* VideoFrameReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFrameReader.swift; sourceTree = "<group>"; };
+		433786792ABDD227002C84A6 /* CoreMLProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLProcessor.swift; sourceTree = "<group>"; };
+		4337867C2ABDD2DF002C84A6 /* CMSampleBuffer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMSampleBuffer+Extensions.swift"; sourceTree = "<group>"; };
+		4337867E2ABDD34E002C84A6 /* CVPixelBuffer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Extensions.swift"; sourceTree = "<group>"; };
+		433786802ABDD391002C84A6 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		5908C1F62ABCDB6900A05070 /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
+		595C4A962ABCB50400E6012E /* sparrow-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sparrow-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		595C4A992ABCB50400E6012E /* sparrow_challengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparrow_challengeApp.swift; sourceTree = "<group>"; };
+		595C4A9B2ABCB50400E6012E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		595C4A9D2ABCB50600E6012E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		595C4A9F2ABCB50600E6012E /* sparrow_challenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sparrow_challenge.entitlements; sourceTree = "<group>"; };
+		595C4AA12ABCB50600E6012E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		595C4AA72ABCB50600E6012E /* sparrow-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sparrow-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		595C4AAB2ABCB50600E6012E /* sparrow_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparrow_challengeTests.swift; sourceTree = "<group>"; };
+		595C4AB12ABCB50600E6012E /* sparrow-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sparrow-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		595C4AB52ABCB50600E6012E /* sparrow_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparrow_challengeUITests.swift; sourceTree = "<group>"; };
+		595C4AB72ABCB50600E6012E /* sparrow_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparrow_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		59E9250C2ABCDE5B00E32821 /* YOLOv3FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = YOLOv3FP16.mlmodel; path = "sparrow-challenge/YOLOv3FP16.mlmodel"; sourceTree = "<group>"; };
+		59E9250D2ABCDE5B00E32821 /* YOLOv3TinyFP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = YOLOv3TinyFP16.mlmodel; path = "sparrow-challenge/YOLOv3TinyFP16.mlmodel"; sourceTree = "<group>"; };
+		59E925142ABCE92500E32821 /* VideoViewPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewPlayer.swift; sourceTree = "<group>"; };
+		59E925162ABCF2D700E32821 /* VideoViewPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewPlayerViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		595C4A932ABCB50400E6012E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595C4AA42ABCB50600E6012E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595C4AAE2ABCB50600E6012E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4337867B2ABDD2D0002C84A6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4337867C2ABDD2DF002C84A6 /* CMSampleBuffer+Extensions.swift */,
+				4337867E2ABDD34E002C84A6 /* CVPixelBuffer+Extensions.swift */,
+				433786802ABDD391002C84A6 /* Int+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5927CE002ABE10A9005FED9B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				595C4A9B2ABCB50400E6012E /* ContentView.swift */,
+				5908C1F62ABCDB6900A05070 /* VideoPicker.swift */,
+				59E925142ABCE92500E32821 /* VideoViewPlayer.swift */,
+				59E925162ABCF2D700E32821 /* VideoViewPlayerViewModel.swift */,
+				433786792ABDD227002C84A6 /* CoreMLProcessor.swift */,
+				433786772ABDD05B002C84A6 /* VideoFrameReader.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		595C4A8D2ABCB50400E6012E = {
+			isa = PBXGroup;
+			children = (
+				59E9250C2ABCDE5B00E32821 /* YOLOv3FP16.mlmodel */,
+				59E9250D2ABCDE5B00E32821 /* YOLOv3TinyFP16.mlmodel */,
+				595C4A982ABCB50400E6012E /* sparrow-challenge */,
+				595C4AAA2ABCB50600E6012E /* sparrow-challengeTests */,
+				595C4AB42ABCB50600E6012E /* sparrow-challengeUITests */,
+				595C4A972ABCB50400E6012E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		595C4A972ABCB50400E6012E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				595C4A962ABCB50400E6012E /* sparrow-challenge.app */,
+				595C4AA72ABCB50600E6012E /* sparrow-challengeTests.xctest */,
+				595C4AB12ABCB50600E6012E /* sparrow-challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		595C4A982ABCB50400E6012E /* sparrow-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				595C4A992ABCB50400E6012E /* sparrow_challengeApp.swift */,
+				5927CE002ABE10A9005FED9B /* Modules */,
+				4337867B2ABDD2D0002C84A6 /* Extensions */,
+				595C4A9D2ABCB50600E6012E /* Assets.xcassets */,
+				595C4A9F2ABCB50600E6012E /* sparrow_challenge.entitlements */,
+				595C4AA02ABCB50600E6012E /* Preview Content */,
+			);
+			path = "sparrow-challenge";
+			sourceTree = "<group>";
+		};
+		595C4AA02ABCB50600E6012E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				595C4AA12ABCB50600E6012E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		595C4AAA2ABCB50600E6012E /* sparrow-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				595C4AAB2ABCB50600E6012E /* sparrow_challengeTests.swift */,
+			);
+			path = "sparrow-challengeTests";
+			sourceTree = "<group>";
+		};
+		595C4AB42ABCB50600E6012E /* sparrow-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				595C4AB52ABCB50600E6012E /* sparrow_challengeUITests.swift */,
+				595C4AB72ABCB50600E6012E /* sparrow_challengeUITestsLaunchTests.swift */,
+			);
+			path = "sparrow-challengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		595C4A952ABCB50400E6012E /* sparrow-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 595C4ABB2ABCB50600E6012E /* Build configuration list for PBXNativeTarget "sparrow-challenge" */;
+			buildPhases = (
+				595C4A922ABCB50400E6012E /* Sources */,
+				595C4A932ABCB50400E6012E /* Frameworks */,
+				595C4A942ABCB50400E6012E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sparrow-challenge";
+			productName = "sparrow-challenge";
+			productReference = 595C4A962ABCB50400E6012E /* sparrow-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		595C4AA62ABCB50600E6012E /* sparrow-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 595C4ABE2ABCB50600E6012E /* Build configuration list for PBXNativeTarget "sparrow-challengeTests" */;
+			buildPhases = (
+				595C4AA32ABCB50600E6012E /* Sources */,
+				595C4AA42ABCB50600E6012E /* Frameworks */,
+				595C4AA52ABCB50600E6012E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				595C4AA92ABCB50600E6012E /* PBXTargetDependency */,
+			);
+			name = "sparrow-challengeTests";
+			productName = "sparrow-challengeTests";
+			productReference = 595C4AA72ABCB50600E6012E /* sparrow-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		595C4AB02ABCB50600E6012E /* sparrow-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 595C4AC12ABCB50600E6012E /* Build configuration list for PBXNativeTarget "sparrow-challengeUITests" */;
+			buildPhases = (
+				595C4AAD2ABCB50600E6012E /* Sources */,
+				595C4AAE2ABCB50600E6012E /* Frameworks */,
+				595C4AAF2ABCB50600E6012E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				595C4AB32ABCB50600E6012E /* PBXTargetDependency */,
+			);
+			name = "sparrow-challengeUITests";
+			productName = "sparrow-challengeUITests";
+			productReference = 595C4AB12ABCB50600E6012E /* sparrow-challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		595C4A8E2ABCB50400E6012E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					595C4A952ABCB50400E6012E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					595C4AA62ABCB50600E6012E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 595C4A952ABCB50400E6012E;
+					};
+					595C4AB02ABCB50600E6012E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 595C4A952ABCB50400E6012E;
+					};
+				};
+			};
+			buildConfigurationList = 595C4A912ABCB50400E6012E /* Build configuration list for PBXProject "sparrow-challenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 595C4A8D2ABCB50400E6012E;
+			productRefGroup = 595C4A972ABCB50400E6012E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				595C4A952ABCB50400E6012E /* sparrow-challenge */,
+				595C4AA62ABCB50600E6012E /* sparrow-challengeTests */,
+				595C4AB02ABCB50600E6012E /* sparrow-challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		595C4A942ABCB50400E6012E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595C4AA22ABCB50600E6012E /* Preview Assets.xcassets in Resources */,
+				595C4A9E2ABCB50600E6012E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595C4AA52ABCB50600E6012E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595C4AAF2ABCB50600E6012E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		595C4A922ABCB50400E6012E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4337867F2ABDD34E002C84A6 /* CVPixelBuffer+Extensions.swift in Sources */,
+				59E9250F2ABCDE5B00E32821 /* YOLOv3TinyFP16.mlmodel in Sources */,
+				433786782ABDD05B002C84A6 /* VideoFrameReader.swift in Sources */,
+				4337867A2ABDD227002C84A6 /* CoreMLProcessor.swift in Sources */,
+				4337867D2ABDD2DF002C84A6 /* CMSampleBuffer+Extensions.swift in Sources */,
+				5908C1F72ABCDB6900A05070 /* VideoPicker.swift in Sources */,
+				59E925152ABCE92500E32821 /* VideoViewPlayer.swift in Sources */,
+				59E925172ABCF2D700E32821 /* VideoViewPlayerViewModel.swift in Sources */,
+				595C4A9C2ABCB50400E6012E /* ContentView.swift in Sources */,
+				433786812ABDD391002C84A6 /* Int+Extensions.swift in Sources */,
+				595C4A9A2ABCB50400E6012E /* sparrow_challengeApp.swift in Sources */,
+				59E9250E2ABCDE5B00E32821 /* YOLOv3FP16.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595C4AA32ABCB50600E6012E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595C4AAC2ABCB50600E6012E /* sparrow_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595C4AAD2ABCB50600E6012E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595C4AB62ABCB50600E6012E /* sparrow_challengeUITests.swift in Sources */,
+				595C4AB82ABCB50600E6012E /* sparrow_challengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		595C4AA92ABCB50600E6012E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 595C4A952ABCB50400E6012E /* sparrow-challenge */;
+			targetProxy = 595C4AA82ABCB50600E6012E /* PBXContainerItemProxy */;
+		};
+		595C4AB32ABCB50600E6012E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 595C4A952ABCB50400E6012E /* sparrow-challenge */;
+			targetProxy = 595C4AB22ABCB50600E6012E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		595C4AB92ABCB50600E6012E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		595C4ABA2ABCB50600E6012E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		595C4ABC2ABCB50600E6012E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "sparrow-challenge/sparrow_challenge.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sparrow-challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 3QEMLNUCL2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access to select video";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sparrow-challenge.dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		595C4ABD2ABCB50600E6012E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "sparrow-challenge/sparrow_challenge.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sparrow-challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 3QEMLNUCL2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access to select video";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sparrow-challenge.dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		595C4ABF2ABCB50600E6012E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3QEMLNUCL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.yantrindade.sparrow-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparrow-challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sparrow-challenge";
+			};
+			name = Debug;
+		};
+		595C4AC02ABCB50600E6012E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3QEMLNUCL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.yantrindade.sparrow-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sparrow-challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sparrow-challenge";
+			};
+			name = Release;
+		};
+		595C4AC22ABCB50600E6012E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7LDT848M8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.yantrindade.sparrow-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "sparrow-challenge";
+			};
+			name = Debug;
+		};
+		595C4AC32ABCB50600E6012E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7LDT848M8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.yantrindade.sparrow-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "sparrow-challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		595C4A912ABCB50400E6012E /* Build configuration list for PBXProject "sparrow-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595C4AB92ABCB50600E6012E /* Debug */,
+				595C4ABA2ABCB50600E6012E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		595C4ABB2ABCB50600E6012E /* Build configuration list for PBXNativeTarget "sparrow-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595C4ABC2ABCB50600E6012E /* Debug */,
+				595C4ABD2ABCB50600E6012E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		595C4ABE2ABCB50600E6012E /* Build configuration list for PBXNativeTarget "sparrow-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595C4ABF2ABCB50600E6012E /* Debug */,
+				595C4AC02ABCB50600E6012E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		595C4AC12ABCB50600E6012E /* Build configuration list for PBXNativeTarget "sparrow-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595C4AC22ABCB50600E6012E /* Debug */,
+				595C4AC32ABCB50600E6012E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 595C4A8E2ABCB50400E6012E /* Project object */;
+}
