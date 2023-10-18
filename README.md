@@ -1,4 +1,8 @@
-# Yan Trindade's Solution
+# Yan Trindade's Solution for Sparrow AI Sports iOS Challenge
+
+## Results
+
+<img src="https://github.com/yanctrindade/sparrow-coreml-ios-test/assets/11860540/bf74d304-9693-42f9-90db-11c5d3c4bb26" style="width: 20%; height: auto;" alt="screen2-ios"> <img src="https://github.com/yanctrindade/sparrow-coreml-ios-test/assets/11860540/9a03adcc-b99c-4c52-81d1-3d6806a18c10" style="width: 20%; height: auto;" alt="screen1-ios">
 
 ## The Solution
 
